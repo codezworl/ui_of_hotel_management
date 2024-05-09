@@ -1,0 +1,226 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.logo span {
+    color: #ffd700; /* Gold color */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd700; /* Gold color */
+}
+
+/* Room Listing Styles */
+.room {
+    position: relative;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Add overflow to prevent room-info overlap */
+    border-radius: 10px; /* Increase border radius for smoother corners */
+}
+
+.room:hover {
+    transform: translateY(-5px);
+}
+
+.room img {
+    width: 100%;
+    border-top-left-radius: 10px; /* Adjust border radius for image */
+    border-top-right-radius: 10px; /* Adjust border radius for image */
+}
+
+.room-details {
+    padding: 20px;
+}
+
+.room-details h3 {
+    margin-bottom: 10px;
+}
+
+.room-details p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.room-info {
+    position: absolute;
+    bottom: 0; /* Adjust bottom position */
+    left: 0; /* Adjust left position */
+    width: 100%; /* Adjust width to fill the entire room */
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    transform: translateY(100%); /* Move room-info off-screen initially */
+    transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.room:hover .room-info {
+    transform: translateY(0); /* Move room-info into view on hover */
+}
+
+.room-info .price {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.room-info .btn {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block; /* Change display to block */
+    margin-top: 10px; /* Add margin-top for spacing */
+    text-align: center; /* Center button text */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.room-info .btn:hover {
+    background-color: #555;
+}
+
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ffd700; /* Gold color */
+}
+/* Hero Section Styles */
+.hero {
+    background-image: url("pic1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Set height to cover viewport height */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Align text in center */
+    color: #fff; /* Text color */
+}
+
+.hero h2 {
+    font-size: 3rem; /* Adjust heading font size */
+    margin-bottom: 20px; /* Add space below heading */
+}
+
+.hero p {
+    font-size: 1.5rem; /* Adjust paragraph font size */
+    margin-bottom: 30px; /* Add space below paragraph */
+}
+
+.hero .btn {
+    padding: 10px 20px; /* Adjust button padding */
+    background-color: #333; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add button border radius */
+    text-decoration: none; /* Remove button underline */
+    font-size: 1.2rem; /* Adjust button font size */
+    transition: background-color 0.3s ease; /* Add button transition */
+}
+
+.hero .btn:hover {
+    background-color: #555; /* Change button background color on hover */
+}
